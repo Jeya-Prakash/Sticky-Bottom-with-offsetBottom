@@ -126,7 +126,7 @@
                 function stickylogic() {
                     var scrollPx = $(window).scrollTop(),
                         staticTop = $(staticDiv).offset().top,
-                        viewPortHeight = visualViewport.height,
+                        viewPortHeight = window.innerHeight,
                         stickyHeight = $(stickyDiv).outerHeight(),
                         staticStartingPx = staticTop - (viewPortHeight - stickyHeight);
                     if (scrollPx >= staticStartingPx)
